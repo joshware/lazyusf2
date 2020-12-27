@@ -333,7 +333,7 @@ void init_interupt(usf_state_t * state)
 
     clear_queue(state);
     add_interupt_event_count(state, VI_INT, state->g_vi.next_vi);
-    add_interrupt_event_count(state, SPECIAL_INT, 0x80000000);
+    add_interupt_event_count(state, SPECIAL_INT, 0x80000000);
     add_interupt_event_count(state, COMPARE_INT, 0);
 }
 
